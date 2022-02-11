@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+        <link rel="stylesheet" href="../css/index.css">
+	</head>
+	<body>
+
+        <div class="container">
+            <div class="navbar">
+                <img class="logo" src="../static/logo.png" alt=""> 
+            </div>
+            <!--body of container start-->
+
+            <div class="container_center">
+                <h3 class="font_" style="font-size: 32px;">DRIVING LICENSE RENEWAL</h3>
+                <p class="font_" style="font-size: 24px; font-weight: bold;">LET'S GET STARTED</p>
+                <p class="font_" style="font-size: 12px; font-weight: 100; color: #00000059;">Add your details (As per your registerd records)</p>
+
+                <div class="form1" id="form1">
+                    <input class="input" type="text" placeholder="Your Name" onclick="nametextfieldfuc()">
+                    <p class="font_" style="text-align: left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: #00000059;">Nature of driving license?</p>
+                    <div class="radio_button_">
+                        <div class="radio_body" id="radio_private">
+                            <input type="radio" name="P"  onclick="radio_sel_private()" placeholder="Private">Private</input>
+                        </div>
+                        <div class="radio_body" id="radio_commerical">
+                            <input type="radio" name="P"  onclick="radio_sel_commerical()" placeholder="Commerical">Commerical</input>
+                        </div>
+
+                    </div>
+                    <button id="next1" onclick="next1fuc()">Next</button>
+
+                </div>
+                <div class="form2" id="form2">
+                    <select class="dropdown" name="cars" id="cars" onclick="page2fuc()">
+                          <option value="volvo" class="tag">Issued year of license<sup>*</sup></option>
+                          <option value="saab" class="tag">2001</option>
+                        <option value="mercedes">2002</option>
+                        <option value="audi" class="option">2003</option>
+                        <option value="saab" class="option">2004</option>
+                        <option value="mercedes" class="option">2005</option>
+                        <option value="audi" class="option">2006</option>
+                      </select>
+                      <select class="dropdown" name="cars" id="cars" onclick="page2fuc()">
+                        <option value="volvo">Issued year of license<sup>*</sup></option>
+                        <option value="saab">2001</option>
+                        <option value="mercedes">2002</option>
+                        <option value="audi">2003</option>
+                        <option value="saab">2004</option>
+                        <option value="mercedes">2005</option>
+                        <option value="audi">2006</option>
+                    </select>
+                    <select class="dropdown" name="cars" id="cars" onclick="page2fuc()">
+                        <option value="volvo">Issued place of D.L<sup>*</sup></option>
+                        <option value="saab">Punjab</option>
+                        <option value="mercedes">Delhi</option>
+                        <option value="audi">Banglore</option>
+                        <option value="audi">Chennai</option>
+                    </select>
+
+                    <div class="button_container2">
+                        <button id="next2" onclick="next2fuc()">Next</button>
+                        <button id="back1" onclick="back1fuc()">Back</button>
+                    </div>
+
+                </div>
+
+                <div class="form3" id="form3">
+
+                    <p style="font-weight: bold; font-size: 24px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">Proof Of Current Entities</p>
+                    <select class="dropdown" name="cars" id="cars" onclick="page3fuc()">
+                          <option value="volvo">Available proof of D.O.B<sup>*</sup></option>
+                          <option value="saab">2001</option>
+                        <option value="mercedes">2002</option>
+                        <option value="audi">2003</option>
+                        <option value="saab">2004</option>
+                        <option value="mercedes">2005</option>
+                        <option value="audi">2006</option>
+                      </select>
+                      <select class="dropdown" name="cars" id="cars" onclick="page3fuc()">
+                        <option value="volvo">Address proof available<sup>*</sup></option>
+                        <option value="saab">2001</option>
+                        <option value="mercedes">2002</option>
+                        <option value="audi">2003</option>
+                        <option value="saab">2004</option>
+                        <option value="mercedes">2005</option>
+                        <option value="audi">2006</option>
+                    </select>
+                    <select class="dropdown" name="cars" id="cars" onclick="page3fuc()">
+                        <option value="volvo">Current place of D.L<sup>*</sup></option>
+                        <option value="saab">Punjab</option>
+                        <option value="mercedes">Delhi</option>
+                        <option value="audi">Banglore</option>
+                        <option value="audi">Chennai</option>
+                    </select>
+                    
+                    <div class="button_container2">
+                        <button id="next3" onclick="next3fuc()">Next</button>
+                        <button id="back2" onclick="back2fuc()">Back</button>
+                    </div>
+
+                </div>
+
+                <div class="form4" id="form4">
+
+                    <p style="color: rgb(61, 61, 61); margin-top: 5px; margin-bottom: 5px; font-weight: bold; font-size: 24px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
+                        ADDITIONAL REQUIREMENT</p>
+                    <P style="color: #00000059; font-weight: bold; font-size: 14px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; ">
+                        If previous driving license was issued from different city than current place of residence?  
+                    </P>
+                    <div>
+                        <div class="radio1" id="radiofirst">
+                            <input type="radio" name="A" onclick="radio_sel_noc1()">NOC available from previous city</input>
+                        </div>
+                        <div class="radio1" id="radiosecond">
+                            <input type="radio" name="A" onclick="radio_sel_noc2()">NOC not available from previous city</input>
+                        </div>
+                        <div class="radio1" id="radiothird">
+                            
+                            <input type="radio" name="A" onclick="radio_sel_noc3()">Same city, No NOc required</input>
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div class="button_container2">
+                        <button >SUBMIT</button>
+                    </div>
+
+                </div>
+
+                <div class="progress_container">
+                    <progress id="progress" max="100" value="0" >
+                    </progress>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../js/index.js"></script>
+		
+	</body>
+</html>

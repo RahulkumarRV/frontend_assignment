@@ -1,0 +1,187 @@
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	width: 100%;
+}
+
+.logo {
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.container_center {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.font_ {
+	margin: 0px;
+	color: rgb(61, 61, 61);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form1 {
+	margin-top: 10px;
+	width: fit-content;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input {
+	width: 300px;
+	height: 30px;
+	border-radius: 8px;
+	border-color: rgb(0 0 0 / 44%);
+	padding-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.input:focus {
+	outline: none !important;
+	border: 2px solid#ff0606d6;
+}
+
+.radio_button_ {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.radio_body {
+	width: 120px;
+	height: 30px;
+	padding: 5px;
+	color: #767676bf;
+	background-color: rgb(163 159 159 / 44%);
+}
+
+.radio_body > input {
+	margin-top: 5px;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	margin-top: 40px;
+	border: none;
+	border-radius: 20px;
+	background-color: #ff0606d6;
+	color: white;
+	cursor: pointer;
+}
+.progress_container {
+	margin-top: 30px;
+}
+
+.progress_container > progress {
+	width: 500px;
+	height: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+progress::-moz-progress-bar {
+	background-color: black;
+}
+
+progress::-webkit-progress-value {
+	background-color: black;
+}
+
+progress {
+	background-color: black;
+}
+
+.form2 {
+	margin-top: 30px;
+	width: fit-content;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.dropdown {
+	width: 300px;
+	height: 50px;
+	/* text-align: left; */
+	border-radius: 10px;
+	border-color: #6a6666b8;
+	border-width: 2px;
+	color: #6a6666b8;
+	padding-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.button_container2 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+}
+
+sup {
+	color: red;
+}
+
+.form3 {
+	margin-top: 5px;
+	width: fit-content;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.form4 {
+	margin-top: 5px;
+	width: fit-content;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+
+.radio1 {
+	width: fit-content;
+	background-color: #bfb9b9cc;
+	padding: 10px;
+	color: #0000009c;
+	font-weight: bold;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	align-items: left;
+	margin-bottom: 5px;
+}
+
+select:focus {
+	outline: none !important;
+	border: 2px solid#ff0606d6;
+}
+
+option::-moz-progress-bar:hover {
+	background-color: black;
+}
+
+option::-webkit-progress-value:hover {
+	background-color: black;
+}
+
+option:hover {
+	background-color: black;
+}
